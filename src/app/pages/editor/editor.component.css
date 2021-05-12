@@ -1,0 +1,109 @@
+:host() ::ng-deep .CodeMirror {
+  height: 100%;
+  font-size: 25px;
+  padding: 15px;
+}
+.header {
+  width: 100%;
+  height: 70px;
+  background: #333;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 21%);
+  -webkit-box-shadow: 1px 1px 4px rgb(0 0 0 / 21%);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
+  -o-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.editor-container {
+  width: 100%;
+  height: 93vh;
+  margin-top: 70px;
+}
+.editor-container .console {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  height: 93vh;
+}
+
+.form-inline .dropdown-item {
+  width: 120px;
+  background: none;
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(190, 190, 190);
+  text-shadow: 1px 1px #444;
+  border: 0;
+  border-radius: 0;
+  border-left: 2px solid #ccc;
+  box-shadow: none;
+}
+.form-inline .dropdown-item.disabled {
+  color: rgb(100, 100, 100);
+}
+.form-inline .run-btn {
+  background: rgb(50, 199, 94);
+  color: #fdfdfd;
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 21%);
+  -webkit-box-shadow: 1px 1px 4px rgb(0 0 0 / 21%);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
+  -o-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
+}
+.form-inline .run-btn:hover,
+.form-inline .run-btn:focus {
+  background: rgb(31, 148, 66);
+}
+.form-inline {
+  background: #333;
+  color: #fdfdfd;
+  display: inline-block;
+}
+.close-log-widnow-btn {
+  font-size: 28px;
+  position: absolute;
+  left: 40px;
+  top: 13px;
+  cursor: pointer;
+}
+.console-log {
+  width: 100%;
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+  margin-left: 2em;
+  text-align: left;
+}
+.console .title {
+  text-align: center;
+}
+.error {
+  color: #fc4040;
+}
+.message {
+  color: #fff;
+}
+.information {
+  color: rgb(66, 233, 149);
+}
+.warning {
+  color: rgb(255, 221, 71);
+}
+
+@media (max-width: 800px) {
+  .editor-container .editor {
+    min-width: 103%;
+  }
+  .editor-container .console {
+    min-width: 103%;
+  }
+}
